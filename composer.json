@@ -1,6 +1,6 @@
 {
     "name": "finbarrmccarthy/goalio-mailservice",
-    "description": "Provide configurable Mail Transport Factories for ZF2",
+    "description": "Provide configurable Mail Transport Factories for ZF2(FMC Custom)",
     "type": "library",
     "keywords": [
         "zf2"
