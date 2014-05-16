@@ -1,16 +1,16 @@
 {
-    "name": "finbarrmccarthy/goalio-mailservice",
+    "name": "finbarrmccarthy/finbarr-mailservice",
     "description": "Provide configurable Mail Transport Factories for ZF2(FMC Custom)",
     "type": "library",
     "keywords": [
         "zf2"
     ],
-    "homepage": "https://github.com/goalio/GoalioMailService",
+    "homepage": "https://github.com/finbarrmccarthy/FinbarrMailService",
     "authors": [
         {
             "name": "Philipp Dobrigkeit",
-            "email": "p.dobrigkeit@goalio.de",
-            "homepage": "http://www.goalio.de"
+            "email": "p.dobrigkeit@finbarr.de",
+            "homepage": "http://www.finbarr.de"
         }
     ],
     "require": {
@@ -19,7 +19,7 @@
     },
     "autoload": {
         "psr-0": {
-            "GoalioMailService": "src/"
+            "FinbarrMailService": "src/"
         },
         "classmap": [
             "./Module.php"

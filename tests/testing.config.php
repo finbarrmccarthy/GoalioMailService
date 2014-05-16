@@ -2,15 +2,15 @@
 return array(
     'service_manager' => array(
         'shared' => array(
-            'goaliomailservice_message'   => false
+            'finbarrmailservice_message'   => false
         ),
         'invokables' => array(
-            'goaliomailservice_message'   => 'GoalioMailService\Mail\Service\Message',
+            'finbarrmailservice_message'   => 'FinbarrMailService\Mail\Service\Message',
         ),
         'factories' => array(
-            'goaliomailservice_options'   => 'GoalioMailService\Mail\Options\Service\TransportOptionsFactory',
-            'goaliomailservice_transport' => 'GoalioMailService\Mail\Transport\Service\TransportFactory',
-            'goaliomailservice_renderer'  => 'GoalioMailService\Mail\View\MailPhpRendererFactory',
+            'finbarrmailservice_options'   => 'FinbarrMailService\Mail\Options\Service\TransportOptionsFactory',
+            'finbarrmailservice_transport' => 'FinbarrMailService\Mail\Transport\Service\TransportFactory',
+            'finbarrmailservice_renderer'  => 'FinbarrMailService\Mail\View\MailPhpRendererFactory',
         ),
     ),
 );

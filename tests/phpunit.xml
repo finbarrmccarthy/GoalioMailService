@@ -9,8 +9,8 @@
          backupGlobals="false"
          syntaxCheck="true"
         >
-    <testsuite name="GoalioMailService Test Suite">
-        <directory>./GoalioMailServiceTest</directory>
+    <testsuite name="FinbarrMailService Test Suite">
+        <directory>./FinbarrMailServiceTest</directory>
     </testsuite>
 
     <filter>

@@ -1,7 +1,7 @@
-GoalioMailService
+FinbarrMailService
 ================
 
-Version 0.0.2 Created by the goalio UG (haftungsbeschränkt)
+Version 0.0.2 Created by the finbarr UG (haftungsbeschränkt)
 
 Introduction
 ------------
@@ -29,11 +29,11 @@ Installation
 
     ```json
     "require": {
-        "goalio/goalio-mailservice": "1.*"
+        "finbarrmccarthy/finbarr-mailservice": "1.*"
     }
     ```
 
-2. Now tell composer to download GoalioMailService by running the command:
+2. Now tell composer to download FinbarrMailService by running the command:
 
     ```bash
     $ php composer.phar update
@@ -48,14 +48,14 @@ Installation
     return array(
         'modules' => array(
             // ...
-            'GoalioMailService'
+            'FinbarrMailService'
         ),
         // ...
     );
     ```
 2. Copy the configuration files for local and global from
-`./vendor/goalio/goalio-mailservice/config/goaliomailservice.{local,global}.php.dist` to
-`./config/autoload/goaliomailservice.{local,global}.php` and change the values as desired.
+`./vendor/finbarrmccarthy/finbarr-mailservice/config/finbarrmailservice.{local,global}.php.dist` to
+`./config/autoload/finbarrmailservice.{local,global}.php` and change the values as desired.
 
 3. If you are using the FileTransport (for development) create the directory `./data/mail`.
 
@@ -68,14 +68,14 @@ Usage
 	// The ViewModel variables to pass into the renderer
 	$value = array('foo' => 'bar');
 
-	$mailService = $this->getServiceManager()->get('goaliomailservice_message');
+	$mailService = $this->getServiceManager()->get('finbarrmailservice_message');
 	$message = $mailService->createTextMessage($from, $to, $subject, $viewTemplate, $values);
 	$mailService->send($message);
 
 SMTP Setup
 ----------
 
-GoalioMailService uses sendmail by default, but you can set it up to use SMTP by putting your information in the config file like this:
+FinbarrMailService uses sendmail by default, but you can set it up to use SMTP by putting your information in the config file like this:
 
     $settings = array(
         'transport_class' => 'Zend\Mail\Transport\Smtp',
